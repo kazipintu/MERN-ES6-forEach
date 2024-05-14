@@ -1,10 +1,11 @@
 
-{ // find will not allow more than one item. It will not show any array or multiple items. It will pick the first match. //
+{ // forEach will returns boolean, or true false of any condition. t will not return any other data-type. //
   const numbers = [3, 21, 12, 5, 56, 21, 3, 4, 5, 8, 29, 19, 20]
 
-  const lessThanTwenty = numbers.find(number => number < 20);
+  const lessThanTwenty = numbers.forEach(number => console.log(number < 20));
 
-  console.log(lessThanTwenty);
+  //console.log(lessThanTwenty);
+
 }
 
 
@@ -16,6 +17,6 @@
     { name: 'shirt', price: 200, color: 'green' },
   ]
 
-  const productBlue = products.find(product => product.color == 'blue');
-  console.log(productBlue);
+  const productBlue = products.forEach(product => console.log(product.color == 'blue'));
+  //console.log(productBlue);
 }
